@@ -1,0 +1,36 @@
+$bg-color-first: #FFFFFF;
+$bg-color-second: #F6F6F6;
+$color-text: #070707;
+$font-main:"Gilroy", sans-serif;
+%font-main-underlined {
+    font-family: $font-main;
+    font-size: 18px;
+    text-decoration-line: underline;
+    line-height: 22px;
+    color: $color-text;
+}
+%font-main-text{
+    font-family: $font-main;
+    line-height: 22px;
+    font-size: 18px;
+    color: $color-text
+}
+%font-main-title {
+    font-family: $font-main;
+    font-size: 34px;
+    line-height: 42px;
+    color: $color-text
+}
+%font-main-description{
+    font-family: $font-main;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
