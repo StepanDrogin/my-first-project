@@ -1,36 +1,67 @@
 $bg-color-first: #FFFFFF;
 $bg-color-second: #F6F6F6;
 $color-text: #070707;
+$color-text-gray: #828282;
 $font-main:"Gilroy", sans-serif;
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('../fonts/gilroy-bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/gilroy-bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
 %font-main-underlined {
-    font-family: $font-main;
     font-size: 18px;
     text-decoration-line: underline;
     line-height: 22px;
     color: $color-text;
 }
 %font-main-text{
-    font-family: $font-main;
     line-height: 22px;
     font-size: 18px;
     color: $color-text
 }
 %font-main-title {
-    font-family: $font-main;
     font-size: 34px;
     line-height: 42px;
     color: $color-text
 }
 %font-main-description{
-    font-family: $font-main;
     font-size: 14px;
     line-height: 17px;
     color: #828282;
 }
-
-* {
+body {
     box-sizing: border-box;
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
-}
+    font-family: $font-main;
+  }
+  .wrapper {
+    width: 100%;
+    max-width: 944px;
+    margin: 0 auto;
+  }
+  .header {
+      background-color: #FFFFFF;
+  }
+  .menu {
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #828282;
+    a {
+        color: $color-text-gray;
+        text-decoration: none;
+        transition: color .2s linear;
+        display: inline-block;
+        margin: 33px 0px;
+        &:hover {
+            color:$color-text;
+        }
+    }
+  }
