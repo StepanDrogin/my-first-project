@@ -12,6 +12,10 @@ $font-main:"Gilroy", sans-serif;
 		url('../fonts/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('../fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
 }
+%primary__fluid {
+    width: 100%;
+    background-color: $bg-color-second;
+}
 %font-main-underlined {
     font-size: 18px;
     text-decoration-line: underline;
@@ -24,14 +28,24 @@ $font-main:"Gilroy", sans-serif;
     color: $color-text
 }
 %font-main-title {
+    font-size: 47.3392px;
+    line-height: 59px;
+    color: $color-text
+}
+%font-subtitle {
+    font-family: Gilroy-Bold;
     font-size: 34px;
     line-height: 42px;
-    color: $color-text
 }
 %font-main-description{
     font-size: 14px;
     line-height: 17px;
     color: #828282;
+}
+%primary-width{
+    width: 100%;
+    max-width: 944px;
+    margin: 0 auto;
 }
 body {
     box-sizing: border-box;
@@ -41,9 +55,7 @@ body {
     font-family: $font-main;
   }
   .wrapper {
-    width: 100%;
-    max-width: 944px;
-    margin: 0 auto;
+    @extend %primary-width;
   }
   .header {
       background-color: #FFFFFF;
@@ -65,3 +77,59 @@ body {
         }
     }
   }
+.header__content {
+    .header__content-inner{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+        .header__content-title{
+            @extend %font-main-title;
+            max-width: 123px;
+            align-items: flex-end;
+            margin: 18px 0px;
+        }
+        .header__content-info {
+            @extend %font-main-text;
+            display: flex;
+            align-items: flex-end;
+            margin: 18px 0px;
+        }
+        .header__content-selector{
+            font-size: 16px;
+            line-height: 20px;
+            -webkit-transform: rotate(90deg); 
+            transform: rotate(90deg);
+            a{
+                text-decoration: none;
+                color: $color-text-gray;
+                transition: color .2s linear;
+                &:hover {
+                    color:$color-text;
+                }
+            }
+        }
+    }
+}
+.header__background-image {
+padding-bottom:105px;
+}
+.container__fluid-about{
+    @extend %primary__fluid;
+    .about {
+        width: 100%;
+        max-width: 944px;
+        margin: 0 auto;
+        text-align: center;
+        .about__title{
+            @extend %font-subtitle;
+            padding-top: 120px;
+        }
+        .about__description{
+            @extend %font-main-text;
+            padding-bottom: 107px;
+            .about__description-item{
+                padding: 10px;
+            }
+        }
+    }
+}
