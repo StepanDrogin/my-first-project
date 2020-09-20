@@ -10,7 +10,7 @@
   background-color: #F6F6F6;
 }
 
-.header__content .header__content-inner .header__content-info, .container__fluid-about .about .about__description {
+.header__content .header__content-inner .header__content-info, .container__fluid-about .about .about__description, .skills__inner .skills__description {
   line-height: 22px;
   font-size: 18px;
   color: #070707;
@@ -22,10 +22,16 @@
   color: #070707;
 }
 
-.container__fluid-about .about .about__title {
+.container__fluid-about .about .about__title, .skills__inner .skills__title {
   font-family: Gilroy-Bold;
   font-size: 34px;
   line-height: 42px;
+}
+
+.skills__inner .skills__programs {
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
 }
 
 .wrapper {
@@ -112,4 +118,24 @@ body {
 }
 .container__fluid-about .about .about__description .about__description-item {
   padding: 10px;
+}
+
+.skills__inner .skills__title {
+  text-align: center;
+  padding-top: 91px;
+}
+.skills__inner .skills__description {
+  text-align: center;
+  padding: 70px 0px 100px;
+}
+.skills__inner .skills__programs {
+  display: flex;
+  justify-content: space-between;
+}
+.skills__inner .skills__programs .skills__programs-items .skills__program-name {
+  padding-top: 25px;
+  padding-bottom: 41px;
+}
+.skills__inner .skills__programs .skills__programs-items .skills__programs-stars {
+  padding-bottom: 110px;
 }

@@ -40,7 +40,7 @@ $font-main:"Gilroy", sans-serif;
 %font-main-description{
     font-size: 14px;
     line-height: 17px;
-    color: #828282;
+    color: $color-text-gray;
 }
 %primary-width{
     width: 100%;
@@ -129,6 +129,32 @@ padding-bottom:105px;
             padding-bottom: 107px;
             .about__description-item{
                 padding: 10px;
+            }
+        }
+    }
+}
+.skills__inner{
+    .skills__title{
+        text-align: center;
+        @extend %font-subtitle;
+        padding-top: 91px;
+    }
+    .skills__description {
+        @extend %font-main-text;
+        text-align: center;
+        padding: 70px 0px 100px;
+    }
+    .skills__programs{
+        display: flex;
+        justify-content: space-between;
+        @extend %font-main-description;
+        .skills__programs-items{
+            .skills__program-name{
+                padding-top: 25px;
+                padding-bottom: 41px;
+            }
+            .skills__programs-stars {
+                padding-bottom: 110px;
             }
         }
     }
