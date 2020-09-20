@@ -5,30 +5,37 @@
   src: url("../fonts/gilroy-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy-bold.woff2") format("woff2"), url("../fonts/gilroy-bold.woff") format("woff"), url("../fonts/gilroy-bold.ttf") format("truetype"), url("../fonts/gilroy-bold.svg#gilroy-bold") format("svg");
   /* Chrome < 4, Legacy iOS */
 }
-.container__fluid-about {
+.container__fluid-about, .container__fluid-porfolio {
   width: 100%;
   background-color: #F6F6F6;
 }
 
-.header__content .header__content-inner .header__content-info, .container__fluid-about .about .about__description, .skills__inner .skills__description {
+.container__fluid-porfolio .portfolio .portfolio__link {
+  font-size: 18px;
+  text-decoration-line: underline;
+  line-height: 22px;
+  color: #070707;
+}
+
+.header__content .header__content-inner .header__content-info, .container__fluid-about .about .about__description, .skills__inner .skills__description, .contacts .wrapper .contacts__text {
   line-height: 22px;
   font-size: 18px;
   color: #070707;
 }
 
-.header__content .header__content-inner .header__content-title {
+.header__content .header__content-inner .header__content-title, .container__fluid-porfolio .portfolio .portfolio__title {
   font-size: 47.3392px;
   line-height: 59px;
   color: #070707;
 }
 
-.container__fluid-about .about .about__title, .skills__inner .skills__title {
+.container__fluid-about .about .about__title, .skills__inner .skills__title, .contacts .wrapper .contacts__title {
   font-family: Gilroy-Bold;
   font-size: 34px;
   line-height: 42px;
 }
 
-.skills__inner .skills__programs {
+.skills__inner .skills__programs, .contacts .contacts__sm-text {
   font-size: 14px;
   line-height: 17px;
   color: #828282;
@@ -138,4 +145,45 @@ body {
 }
 .skills__inner .skills__programs .skills__programs-items .skills__programs-stars {
   padding-bottom: 110px;
+}
+
+.container__fluid-porfolio .portfolio {
+  width: 100%;
+  max-width: 944px;
+  margin: 0 auto;
+  text-align: center;
+}
+.container__fluid-porfolio .portfolio .portfolio__title {
+  text-align: center;
+  padding: 112px 0 47px;
+}
+.container__fluid-porfolio .portfolio .portfolio__link .portfolio__link-site {
+  padding: 44px 0px 100px;
+}
+
+.contacts {
+  text-align: center;
+}
+.contacts .wrapper .contacts__title {
+  padding-top: 114px;
+  padding-bottom: 10px;
+}
+.contacts .wrapper .contacts__text {
+  padding-bottom: 30px;
+}
+.contacts .wrapper .contacts__btn {
+  background-color: black;
+  color: #FFFFFF;
+  height: 42px;
+  width: 180px;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+}
+.contacts .wrapper .contacts__sm-icons {
+  text-align: center;
+}
+.contacts .wrapper .contacts__sm-icons .contacts__sm-icon {
+  padding: 82px 28px 46px;
 }

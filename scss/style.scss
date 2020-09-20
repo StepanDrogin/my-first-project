@@ -159,3 +159,56 @@ padding-bottom:105px;
         }
     }
 }
+.container__fluid-porfolio{
+    @extend %primary__fluid;
+    .portfolio{
+        width: 100%;
+        max-width: 944px;
+        margin: 0 auto;
+        text-align: center;
+        .portfolio__title{
+            text-align: center;
+            padding: 112px 0 47px;
+            @extend %font-main-title;
+        }
+        .portfolio__link{
+            @extend %font-main-underlined;
+            .portfolio__link-site {
+                padding: 44px 0px 100px;
+            }
+        }
+    }
+}
+.contacts{
+    text-align: center;
+    .wrapper{
+        .contacts__title{
+            @extend %font-subtitle;
+            padding-top: 114px;
+            padding-bottom: 10px;
+        }
+        .contacts__text{
+            @extend %font-main-text;
+            padding-bottom: 30px;
+        }
+        .contacts__btn{
+            background-color: black;
+            color: $bg-color-first;
+            height: 42px;
+            width: 180px;
+            border-radius: 25px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        .contacts__sm-icons{
+            text-align: center;
+            .contacts__sm-icon{
+                padding: 82px 28px 46px;
+            }
+        }
+    }
+    .contacts__sm-text{
+        @extend %font-main-description;
+    }
+}
