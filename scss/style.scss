@@ -214,8 +214,10 @@ padding-bottom:105px;
         @extend %font-main-description;
     }
 }
+@media screen and (min-width: 375px){
 .hamburger-menu {
     display: none;
+}
 }
 @media screen and (max-width: 375px) {
     .menu{

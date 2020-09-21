@@ -194,10 +194,11 @@ body {
   padding: 82px 28px 46px;
 }
 
-.hamburger-menu {
-  display: none;
+@media screen and (min-width: 375px) {
+  .hamburger-menu {
+    display: none;
+  }
 }
-
 @media screen and (max-width: 375px) {
   .menu {
     display: none;
